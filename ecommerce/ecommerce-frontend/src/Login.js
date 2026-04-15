@@ -17,10 +17,9 @@ function Login() {
         }
       );
 
-      // Save token
       localStorage.setItem("token", res.data.access);
 
-      // Redirect to products page
+      // redirect after login
       navigate("/products");
 
     } catch (err) {
